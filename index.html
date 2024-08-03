@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Gao - Erhu / Shaoqin Musician</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            animation: fadeIn 2s ease-out;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .title-decorator {
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #2c3e50;
+            margin: 10px auto 20px auto;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            display: none;
+            font-size: 14px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>George Gao</h1>
+        <div class="title-decorator"></div>
+        <h2>Erhu / Shaoqin Musician</h2>
+        <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Erhu.jpg" alt="Erhu Instrument">
+        </div>
+        <p>高韶青－二胡 / 韶琴</p>
+        <p class="fade-in">Gemini-award nominated Canadian musician George Gao started learning erhu at the age of six and went on to study at the Shanghai Conservatory of Music and the Royal Conservatory of Music in Toronto. Today, he is a world-renowned erhu performer and a renaissance man who has written and arranged music for films, television and Broadway musicals. At the same time, he is also a producer to many global musicians and artists. George Gao is also known for his superior musicianship and for being one of the most innovative and representative fiddlers of his generation.</p>
+        
+        <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Erhu_Player.jpg" alt="George Gao Playing Erhu">
+        </div>
+        
+        <p class="fade-in">George Gao has written for Canadian films and television advertisements. Collaborating with 20-time Grammy award winning artist and composer Brian Keane, he worked on the soundtrack to the three-part documentary, Becoming American – The Chinese Experience, penning music for American network giant PBS. George Gao has also composed the following erhu masterpieces: Erhu Capriccio No. 1 - Nostalgia, Capriccio No. 2 – Mongolian Fantasy, Capriccio No. 3 – Dazzlement, Capriccio No. 4 – Gobi Fantasy, Capriccio No. 5 – Nakhi and Capriccio No. 6 - Shaoyin, these works have been universally acknowledged as contemporary erhu classics, and are frequently used as set pieces for important national and international erhu competitions.</p>
+        
+        <p class="fade-in">His virtuosic rearrangements of Carmen Fantasy and Gypsy Air for erhu have also achieved great popularity. Always experimenting, George Gao frequently invoke genres of jazz, rock, new age, middle eastern music, Indian music, Latin music and folk music in his own compositions. In doing so, he has brought his infectious energy and the erhu to many stages around the world. Today, he is hailed as an influential contributor towards the modernization of Chinese music, and the inspiration for new styles of music-making in China.</p>
+        
+        <p class="fade-in">An enthusiast of many musical styles, George helped found the Beijing rock band Red Maple Leaf and the pop group, Snowman. In Toronto, he has collaborated with many world music artists including Jesse Cook, Donald Quan and Ron Korb, and joined many world music ensembles such as Bowfire, Silk Orchestra, George Gao Ensemble and Memento.</p>
+        
+        <p class="fade-in">Besides performing with orchestras worldwide, George Gao was a professor in residence at the Shanghai Institute of Visual Art, the National Taiwan University of Arts, visiting professor at the China Conservatory of Music, the Zao Zhuang University, the Jiang Xi University of Science and Technology in China and Ogaki Women's College in Japan.</p>
+        
+        <p class="fade-in">高韶青 George Shao Qing Gao</p>
+        <p class="fade-in">——网上疯传的“一把中国二胡在加拿大火了，全场震惊！”就是华人二胡大师高韶青在加拿大新总督就职典礼上的精彩表演，曲名战马奔腾《Galloping Horses（被译万马奔腾）》。</p>
+        
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p>Wechat: erhumusic</p>
+            <p>Facebook: <a href="https://www.facebook.com/share/SU2dmSSeeFdbrhrq/?mibextid=LQQJ4d">shaoqinerhu</a></p>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">Scroll to Top</button>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollButton = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 100) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
